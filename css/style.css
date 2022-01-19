@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Playfair+Display&display=swap");
+
+:root {
+	--font-primary: "IBM Plex Sans", sans-serif;
+	--font-secondary: "Playfair Display", serif;
+	overflow-x: hidden;
+	--palette-brown: #360f0f;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-family: var(--font-primary);
+	line-height: 1.5;
+	letter-spacing: 0.08rem;
+	overflow: hidden;
+}
+
+#hero {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero::after {
+	width: 100vw;
+	height: 100vh;
+	content: "";
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hero video {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	object-fit: cover;
+}
+
+#hero .caption {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	z-index: 20;
+	color: white;
+	font-family: var(--font-secondary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+	.testo {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.testo {
+		font-size: 1.2rem;
+	}
+	#hero .caption img {
+		max-width: 80%;
+		margin: auto;
+	}
+}
+
+#hero .subcaption .stagioni .testo {
+	color: white;
+	border: 1px solid #ffffff;
+}
+
+#hero .subcaption .stagioni .testo:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
