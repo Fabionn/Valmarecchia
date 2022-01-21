@@ -3,6 +3,9 @@
 :root {
 	--font-primary: "IBM Plex Sans", sans-serif;
 	--font-secondary: "Playfair Display", serif;
+	--color-light: #CEBBAB;
+	--color-yellow: #E3A839;
+	--color-light-yellow: #D0AC49;
 	overflow-x: hidden;
 	--palette-brown: #360f0f;
 }
@@ -18,7 +21,7 @@ body {
 	overflow: hidden;
 }
 
-#hero {
+#hero{
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -26,7 +29,8 @@ body {
 	justify-content: center;
 }
 
-#hero::after {
+#hero::after,
+.semitransparent::after {
 	width: 100vw;
 	height: 100vh;
 	content: "";
@@ -60,19 +64,24 @@ body {
 	justify-content: space-around;
 }
 
+#hero .caption img {
+	max-width: 70%;
+	margin: auto;
+}
+
 @media screen and (max-width: 768px) {
 	.testo {
 		font-size: 1rem;
+	}
+
+	#hero .caption .text-center {
+		padding-top: 30%;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.testo {
-		font-size: 1.2rem;
-	}
-	#hero .caption img {
-		max-width: 80%;
-		margin: auto;
+		font-size: 1.4rem;
 	}
 }
 
@@ -85,4 +94,38 @@ body {
 	background-color: white;
 	color: black;
 	cursor: pointer;
+}
+
+.esplora-territorio {
+	position: relative;
+	width: 100%;
+	z-index: 20;
+	color: white;
+	font-family: var(--font-secondary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	top:3rem;
+}
+
+.text-comune{
+	font-family: var(--font-primary);
+	color: var(--color-yellow);
+}
+
+.text-comune:hover{
+	color: var(--color-light-yellow);
+}
+.card {
+	background-color: #00000040;
+}
+
+.card-body{
+	font-family: var(--font-primary);
+}
+
+.light-link{
+	text-decoration: underline;
+	color: var(--color-light);
 }
