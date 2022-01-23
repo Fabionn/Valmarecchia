@@ -174,7 +174,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	.foglie-col {
+	.foglie-col,
+	.text-center {
 		font-size: 1.8vw;
 	}
 }
@@ -187,4 +188,89 @@ body {
 	bottom: -50px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.prodotto {
+	height: 100vh;
+}
+
+.prodotto-img {
+	flex: 50%;
+}
+
+.prodotto-desc {
+	flex: 50%;
+}
+
+.castagna {
+	background-color: #9d4b3a;
+	width: 75%;
+	height: 100%;
+}
+
+.tartufo {
+	background-color: #453939;
+	width: 75%;
+	height: 100%;
+}
+
+.formaggio {
+	background-color: #f3daab;
+	width: 75%;
+	height: 100%;
+}
+
+.prodotto-center {
+	top: 50%;
+	left: 40%;
+	transform: translateY(-50%);
+}
+
+.icon {
+	right: 2rem;
+	top: 2rem;
+}
+
+.prodotto-desc .text-center{
+	height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+	.prodotto{
+		display: none;
+	}
+	.prodotto-mobile {
+		display: flex;
+	}
+	.castagna,
+	.tartufo,
+	.formaggio {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.prodotto{
+		display: flex;
+	}
+	.prodotto-mobile {
+		display: none;
+	}
+}
+
+.prodotto-mobile {
+	height: 40vh;
+}
+
+.img-mobile {
+	bottom: -50px;
+}
+
+.description-mobile {
+	color: white;
+}
+
+.description-mobile a {
+	color: white;
+	text-decoration: underline;
 }
