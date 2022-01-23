@@ -274,3 +274,78 @@ body {
 	color: white;
 	text-decoration: underline;
 }
+.icona-stagione{
+	cursor: pointer;
+}
+.icona-stagione:hover{
+	border: solid;
+	border-color: #c89c8e;
+	border-radius: 50%;
+}
+
+.footer,
+.footer-mobile {
+	background-color: #462b2f;
+}
+.footer-col{
+	flex: 50%;
+	color: white;
+}
+
+.social {
+	color: white;
+}
+
+.social a,
+.social-mobile a {
+	color: white;
+}
+
+.dropdown-toggle {
+	text-decoration: underline;
+}
+
+.dropdown a {
+	color: white;
+}
+.dropdown a:hover {
+	color: white;
+}
+
+.dropdown-item{
+	color: black!important;
+}
+
+.policies a {
+	color: white;
+}
+
+.footer-menu {
+	flex: 33%;
+}
+
+.footer-menu a {
+	color: white;
+}
+
+.footer-mobile .flex-column {
+	height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+	.footer{
+		display: none;
+	}
+	.footer-mobile {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer{
+		display: flex;
+	}
+	.footer-mobile {
+		display: none;
+	}
+}
