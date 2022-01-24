@@ -22,50 +22,50 @@
 	visibility: visible;
 }
 
-#menu.open li:nth-child(1) {
+/* #menu.open li:nth-child(1) {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+#menu.open li:nth-child(2) {
 	-webkit-animation-delay: 0.2s;
 	animation-delay: 0.2s;
 }
-#menu.open li:nth-child(2) {
+#menu.open li:nth-child(3) {
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 }
-#menu.open li:nth-child(3) {
+#menu.open li:nth-child(4) {
 	-webkit-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
-#menu.open li:nth-child(4) {
+#menu.open li:nth-child(5) {
 	-webkit-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 }
-#menu.open li:nth-child(5) {
+#menu.open li:nth-child(6) {
 	-webkit-animation-delay: 0.6s;
 	animation-delay: 0.6s;
 }
-#menu.open li:nth-child(6) {
+#menu.open li:nth-child(7) {
 	-webkit-animation-delay: 0.7s;
 	animation-delay: 0.7s;
 }
-#menu.open li:nth-child(7) {
-	-webkit-animation-delay: 0.8s;
-	animation-delay: 0.8s;
-}
 #menu.open li:nth-child(8) {
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+#menu.open li:nth-child(9) {
 	-webkit-animation-delay: 0.9s;
 	animation-delay: 0.9s;
 }
-#menu.open li:nth-child(9) {
+#menu.open li:nth-child(10) {
 	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
-}
-#menu.open li:nth-child(10) {
-	-webkit-animation-delay: 1.1s;
-	animation-delay: 1.1s;
-}
+} */
 
 #menu.open li {
-	-webkit-animation-duration: 1.1s;
-	animation-duration: 1.1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: zoomIn;
@@ -73,8 +73,8 @@
 }
 
 #menu li {
-	-webkit-animation-duration: 1.1s;
-	animation-duration: 1.1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: zoomOut;
@@ -195,8 +195,6 @@
 	height: 2px;
 	left: calc(50% - 15px);
 	position: absolute;
-	/* top: calc(50% - 1px);
-	transform-origin: 50% 50%; */
 	transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
 	width: 20px;
 }
@@ -241,4 +239,20 @@
 	top: 0;
 	background-color: var(--palette-brown);
 	transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.menu-stagioni {
+	display: none;
+}
+
+.menu-comuni {
+	display: none;
+}
+
+.menu-prodotti {
+	display: none;
+}
+
+.menu-indietro {
+	display: none;
 }

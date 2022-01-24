@@ -566,7 +566,7 @@ body {
 }
 
 .olio {
-	background:rgba(211, 178, 57, 0.6);
+	background: rgba(211, 178, 57, 0.6);
 }
 
 .formaggio {
@@ -596,7 +596,6 @@ body {
 .funghi {
 	background: rgba(219, 200, 175, 0.6);
 }
-
 
 .container-chisiamo {
 	background-image: url(../img/chi-siamo.png);
