@@ -398,10 +398,10 @@ body {
 	height: 20vw;
 	overflow: hidden;
 	position: absolute;
-	z-index: 5;
+	z-index: 20;
 	display: none;
 	background-color: #f7e7bb;
-	border-radius: 10%;
+	border-radius: 5%;
 	background-image: url("../img/foglie\ 2.svg");
 	background-repeat: no-repeat;
 	background-position: right;
@@ -409,7 +409,7 @@ body {
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 }
 
-.map-container .box h4 {
+.map-container .box h6 {
 	margin-left: 5%;
 	padding-top: 15px;
 	padding-bottom: 10px;
@@ -432,22 +432,30 @@ body {
 	background: transparent url("../img/close-black.svg") center center no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
+.map-container .box .box-link {
+	margin-left: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
 	.map-container .box {
-		width: 60vw;
-		height: 22.5vw;
+		width: 30vw;
+		height: 30vw;
 	}
+}
+
+@media only screen and (max-width: 768px) {
+
 	.map-container .box {
-		width: 22.5vw;
-		height: 22.5vw;
+		width: 30vw;
+		height: 30vw;
 	}
 
 	.map-container .box p {
-		font-size: 7px;
+		font-size: 10px;
 		margin-left: 5%;
 		line-height: normal;
 	}
-	.map-container .box h4 {
+	.map-container .box h6 {
 		margin-left: 5%;
 		padding-top: 15px;
 		padding-bottom: 10px;
@@ -460,8 +468,22 @@ body {
 		position: absolute;
 		top: 10%;
 		right: 5%;
-		width: 5px;
-		height: 5px;
+		width: 10px;
+		height: 10px;
 		background: transparent url("../img/close-black.svg") center center no-repeat;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.map-container .box {
+		width: 50vw;
+		height: 50vw;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.map-container .box {
+		width: 60vw;
+		height: 65vw;
 	}
 }
