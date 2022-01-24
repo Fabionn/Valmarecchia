@@ -596,3 +596,45 @@ body {
 .funghi {
 	background: rgba(219, 200, 175, 0.6);
 }
+
+
+.container-chisiamo {
+	background-image: url(../img/chi-siamo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.container-chisiamo .d-flex {
+	height: 100vh;
+}
+
+.container-chisiamo2 {
+	background-image: url(../img/chi-siamo-pattern.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100vh;
+}
+
+.container-chisiamo2 .d-flex {
+	height: 100vh;
+}
+
+.container-chisiamo2.d-flex .text h1 {
+	font-size: 5rem;
+}
+
+.container-chisiamo2.d-flex .text p {
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 425px) {
+	.container-chisiamo2 .d-flex .text h1 {
+		font-size: 2rem;
+	}
+
+	.container-chisiamo2 .d-flex .text p {
+		font-size: 1rem;
+	}
+}
