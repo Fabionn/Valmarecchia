@@ -263,7 +263,7 @@ body {
 }
 
 .img-mobile {
-	bottom: -50px;
+	bottom: 0;
 }
 
 .description-mobile {
@@ -444,7 +444,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
 	.map-container .box {
 		width: 30vw;
 		height: 30vw;
