@@ -637,3 +637,26 @@ body {
 		font-size: 1rem;
 	}
 }
+
+.container-castagne {
+	background-image: url(../img/palette.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.castagne-sfondo {
+	position: absolute;
+	top: 0;
+	background: url(../img/pattern-castagne.svg);
+	background-size: 100%;
+	background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.castagne-sfondo {
+		background-size: 150%;
+	}
+}
