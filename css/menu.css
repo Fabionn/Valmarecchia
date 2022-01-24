@@ -120,7 +120,7 @@
 }
 
 .toggle-menu {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
 	border: none;
 	cursor: pointer;
@@ -143,16 +143,13 @@
 	top: 2rem;
 	left: 50%;
 	transform: translate(-50%, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	padding: 10px;
 }
 
 .home-icon img {
 	width: 120px;
-}
-
-@media screen and (max-width: 768px) {
-	.home-icon img {
-		width: 100px;
-	}
 }
 
 .search-icon {
@@ -160,13 +157,29 @@
 	z-index: 1110;
 	top: 2rem;
 	right: 2rem;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
-	padding: 18px;
+	padding: 12px;
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.home-icon img {
+		width: 100px;
+	}
+
+	.search-icon {
+		right: 1rem;
+	}
+
+	.toggle-menu {
+		left: 1rem;
+	}
 }
 
 .toggle-menu.active + .home-icon,
-.toggle-menu.active + .home-icon + .search-icon{
+.toggle-menu.active + .home-icon + .search-icon {
 	filter: invert();
 	transition: filter 1s ease-out;
 }
