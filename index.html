@@ -2,169 +2,98 @@
 <html lang="it">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/menu.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Valmarecchia</title>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/menu.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Valmarecchia</title>
 </head>
 
 <body>
-	<header id="header">
-		<nav>
-			<button class="toggle-menu">
-				<span></span>
-			</button>
-			<a class="home-icon" href="./index.html">
-				<img width="100vw" src="img/logo.svg" alt="home-icon"></img>
-			</a>
-			<a class="search-icon" href="#">
-				<img width="25vw" src="img/cerca.svg" alt="search-icon"></img>
-			</a>
-		</nav>
-	</header>
-	<div id="menu" class="container-fluid">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#"> Stagioni </a></li>
-				<li><a href="#"> Prodotti </a></li>
-				<li><a href="#"> Comuni </a></li>
-				<li><a href="#"> Chi Siamo </a></li>
-			</ul>
-		</nav>
-	</div>
-	<div id="hero">
-		<video loop muted autoplay preload="auto" src="videos/video_1.mp4" type="video/mp4"></video>
-		<div class="caption">
-			<div class="px-2 pt-md-5 px-md-5 text-center">
-				<img class="img-fluid pt-2 px-md-5 pt-md-5" src="img/titolo.png" alt="titolo" />
-				<h3 class="text-center pt-5 pt-lg-2 testo">
-					Scopri un territorio ricco di materie prime come la Valmarecchia,<br />
-					lasciandoti trasportare dal colore
-				</h3>
-			</div>
-			<div class="subcaption text-center">
-				<h3 class="pt-5 testo">Scegli la stagione</h3>
-				<div class="pt-3 d-flex flex-column flex-sm-row justify-content-around stagioni">
-					<div class="m-1 p-1">
-						<div class="testo px-4">Primavera</div>
-					</div>
-					<div class="m-1 p-1">
-						<div class="testo px-4">Estate</div>
-					</div>
-					<div class="m-1 p-1">
-						<div class="testo px-4">Autunno</div>
-					</div>
-					<div class="m-1 p-1">
-						<div class="testo px-4">Inverno</div>
-					</div>
-				</div>
-				<div class="pt-4">
-					<p class="testo">Interagisci con la mappa</p>
-					<img class="freccia-home" width="40px" src="img/freccia-home.svg" alt="freccia-home" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="hero">
-		<div class="position-relative mappa-home semitransparent w-100 h-100">
-			<!-- <img class="img-fluid relative" src="img/mappa.png" alt="mappa"> -->
-			<div class="pt-md-5 esplora-territorio position-absolute">
-				<div class="pt-md-5 d-flex flex-column justify-content-around text-center">
-					<h2 class="px-1 pb-3">Esplora il territorio</h2>
-					<div class="accordion" id="accordion">
-						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h2 class="mb-0">
-									<button class="btn btn-block text-center text-comune" type="button" data-toggle="collapse"
-										data-target="#collapse" aria-expanded="true" aria-controls="collapse">
-										Seleziona il Comune
-									</button>
-								</h2>
-							</div>
-							<div id="collapse" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-								<div class="card-body">
-									<div class="accordion" id="accordion2">
-										<div class="card">
-											<div class="card-header" id="headingOne">
-												<h2 class="mb-0">
-													<button class="btn btn-block text-center text-comune" type="button"
-														data-toggle="collapse" data-target="#Talamello" aria-expanded="true"
-														aria-controls="Talamello">
-														Talamello
-													</button>
-												</h2>
-											</div>
-											<div id="Talamello" class="collapse" aria-labelledby="headingOne"
-												data-parent="#accordion2">
-												<div class="card-body">
-													Talamello fa parte dei Comuni
-													dell’Alta Valmarecchia, si trova
-													sul Monte Pincio con vista su
-													Novafeltria e l’intera vallata.
-													Piccolo borgo dall’aspetto medievale,
-													Talamello è famosa per il
-													formaggio di fossa.<br>
-													<a class="light-link" href="talamello.html">Scopri di più</a>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-header" id="headingOne">
-												<h2 class="mb-0">
-													<button class="btn btn-block text-center text-comune" type="button"
-														data-toggle="collapse" data-target="#Verucchio" aria-expanded="true"
-														aria-controls="Verucchio">
-														Verucchio
-													</button>
-												</h2>
-											</div>
-											<div id="Verucchio" class="collapse" aria-labelledby="headingOne"
-												data-parent="#accordion2">
-												<div class="card-body">
-													Verucchio fa parte dei Comuni<br>
-													dell’Alta Valmarecchia.<br><br>
-													<a class="light-link" href="">Scopri di più</a>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-header" id="headingOne">
-												<h2 class="mb-0">
-													<button class="btn btn-block text-center text-comune" type="button"
-														data-toggle="collapse" data-target="#Santarcangelo" aria-expanded="true"
-														aria-controls="Santarcangelo">
-														Santarcangelo
-													</button>
-												</h2>
-											</div>
-											<div id="Santarcangelo" class="collapse" aria-labelledby="headingOne"
-												data-parent="#accordion2">
-												<div class="card-body">
-													Santarcangelo fa parte dei Comuni<br>
-													dell’Alta Valmarecchia.<br><br>
-													<a class="light-link" href="">Scopri di più</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer class="footer">
+   <header id="header">
+      <nav>
+         <button class="toggle-menu">
+            <span></span>
+         </button>
+         <a class="home-icon" href="./index.html">
+            <img width="100vw" src="img/logo.svg" alt="home-icon"></img>
+         </a>
+         <a class="search-icon" href="#">
+            <img width="25vw" src="img/cerca.svg" alt="search-icon"></img>
+         </a>
+      </nav>
+   </header>
+   <div id="menu" class="container-fluid">
+      <nav class="main-nav">
+         <ul>
+            <li><a href="#"> Stagioni </a></li>
+            <li><a href="#"> Prodotti </a></li>
+            <li><a href="#"> Comuni </a></li>
+            <li><a href="#"> Chi Siamo </a></li>
+         </ul>
+      </nav>
+   </div>
+   <div id="hero">
+      <video loop muted autoplay preload="auto" src="videos/video_1.mp4" type="video/mp4"></video>
+      <div class="caption">
+         <div class="px-2 pt-md-5 px-md-5 text-center">
+            <img class="img-fluid pt-2 px-md-5 pt-md-5" src="img/titolo.png" alt="titolo" />
+            <h3 class="text-center pt-5 pt-lg-2 testo">
+               Scopri un territorio ricco di materie prime come la Valmarecchia,<br />
+               lasciandoti trasportare dal colore
+            </h3>
+         </div>
+         <div class="subcaption text-center">
+            <h3 class="pt-5 testo">Scegli la stagione</h3>
+            <div class="pt-3 d-flex flex-column flex-sm-row justify-content-around stagioni">
+               <div class="m-1 p-1">
+                  <div class="testo px-4">Primavera</div>
+               </div>
+               <div class="m-1 p-1">
+                  <div class="testo px-4">Estate</div>
+               </div>
+               <div class="m-1 p-1">
+                  <div class="testo px-4">Autunno</div>
+               </div>
+               <div class="m-1 p-1">
+                  <div class="testo px-4">Inverno</div>
+               </div>
+            </div>
+            <div class="pt-4">
+               <p class="testo">Interagisci con la mappa</p>
+               <img class="freccia-home" width="40px" src="img/freccia-home.svg" alt="freccia-home" />
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid map-container">
+      <div class="pattern-map">
+         <div class="row">
+            <div class="col-12 map-wrapper">
+               <img src="img/mappa@300x.png" class="mappa">
+               <img src="img/hotpoint.png" class="hotpoint hotpoint-1" data-box="box-1">
+               <img src="img/hotpoint.png" class="hotpoint hotpoint-2" data-box="box-2">
+               <img src="img/hotpoint.png" class="hotpoint hotpoint-3" data-box="box-3">
+            </div>
+         </div>
+      </div>
+      <div class="box box-1">
+         <div class="img-box"></div>
+         <h4>TALAMELLO</h4>
+         <p>Talamello fa parte dei comuni dell'Alta Valmarecchia, si trova sul Monte Pincio con vista su Novafeltria e
+            l'intera vallata. Piccolo borgo dall'aspetto medievale, Talamello è famosa per il formaggio di fossa.</p>
+         <a href="#" class="close-box"></a>
+      </div>
+   </div>
+   <footer class="footer">
       <div class="footer-col d-flex flex-column justify-content-around p-5">
          <div class="social">
             <a href=""><i class="fab fa-2x fa-facebook-f mx-2"></i></a>
@@ -442,15 +371,15 @@
       </div>
    </footer>
 
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-		crossorigin="anonymous"></script>
-	<script src="js/index.js"></script>
-	<script src="js/menu.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+   <script src="js/index.js"></script>
+   <script src="js/menu.js"></script>
 </body>
 
 </html>
