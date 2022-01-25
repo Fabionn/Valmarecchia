@@ -133,14 +133,14 @@
 	vertical-align: middle;
 	width: 50px;
 	z-index: 1110;
-	left: 2rem;
-	top: 2rem;
+	left: 0.5rem;
+	top: 0.5rem;
 }
 
 .home-icon {
 	position: fixed;
 	z-index: 1110;
-	top: 2rem;
+	top: 0.5rem;
 	left: 50%;
 	transform: translate(-50%, 0);
 	background-color: rgba(0, 0, 0, 0.3);
@@ -155,8 +155,8 @@
 .search-icon {
 	position: fixed;
 	z-index: 1110;
-	top: 2rem;
-	right: 2rem;
+	top: 0.5rem;
+	right: 0.5rem;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
 	padding: 12px;
@@ -170,11 +170,11 @@
 	}
 
 	.search-icon {
-		right: 1rem;
+		right: 0.5rem;
 	}
 
 	.toggle-menu {
-		left: 1rem;
+		left: 0.5rem;
 	}
 }
 

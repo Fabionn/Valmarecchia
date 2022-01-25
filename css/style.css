@@ -643,20 +643,74 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height: 100vh;
+	height: 150vh;
 	width: 100vw;
 }
 
-.castagne-sfondo {
-	position: absolute;
-	top: 0;
-	background: url(../img/pattern-castagne.svg);
-	background-size: 100%;
+.castagne-pattern {
+	background-image: url(../img/pattern-castagne.svg);
+	background-size: contain;
 	background-position: center;
+	height: 200vh;
+	width: 100vw;
+	top: -50vh;
 }
 
 @media only screen and (max-width: 768px) {
-	.castagne-sfondo {
-		background-size: 150%;
+	.castagne-pattern {
+		background-size: 160%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.info-castagna {
+		font-size: 1.5rem;
+	}
+}
+
+.headline-castagne {
+	background-color: #cebbab;
+}
+
+.headline-castagne h2 {
+	margin-left: 3rem;
+	font-size: 3rem;
+}
+
+.headline-castagne img {
+	width: 30%;
+	bottom: -50px;
+	right: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	.headline-castagne img {
+		width: 40%;
+		bottom: -50px;
+		right: 3rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.headline-castagne h2 {
+		margin-left: 2rem;
+		font-size: 2rem;
+	}
+	.headline-castagne img {
+		width: 50%;
+		bottom: -50px;
+		right: 2rem;
+	}
+}
+
+@media only screen and (max-width: 428px) {
+	.headline-castagne h2 {
+		margin-left: 0;
+		font-size: 1.5rem;
+	}
+	.headline-castagne img {
+		width: 50%;
+		bottom: 10px;
+		right: 0;
 	}
 }
