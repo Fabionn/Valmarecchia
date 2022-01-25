@@ -769,3 +769,21 @@ body {
 .castagne-sale {
 	background-color: #e1ab4c;
 }
+
+.castagne-right img {
+	flex: 50%;
+}
+.castagne-dove {
+	background-color: #ccb8a9;
+}
+
+.castagne-larger {
+	background-image: url(../img/castagne-dove1.svg);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.castagne-dove-img {
+	height: 50%;
+}
