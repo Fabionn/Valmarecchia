@@ -638,12 +638,17 @@ body {
 	}
 }
 
+.castagne-esterno {
+	height: 100vh;
+	overflow-y: scroll;
+}
+
 .container-castagne {
 	background-image: url(../img/palette.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height: 150vh;
+	height: 200vh;
 	width: 100vw;
 }
 
@@ -651,14 +656,19 @@ body {
 	background-image: url(../img/pattern-castagne.svg);
 	background-size: contain;
 	background-position: center;
-	height: 200vh;
+	height: 250vh;
 	width: 100vw;
 	top: -50vh;
+	overflow-y: scroll;
 }
 
 @media only screen and (max-width: 768px) {
+	.container-castagne {
+		height: 150vh;
+	}
 	.castagne-pattern {
 		background-size: 160%;
+		height: 200vh;
 	}
 }
 
