@@ -737,3 +737,35 @@ body {
 		right: 0;
 	}
 }
+
+.ricette .card {
+	border: none;
+}
+
+.ricette .card-body {
+	padding: 2rem;
+}
+
+.castagne-vapore {
+	background-color: #f5e7b2;
+}
+
+.castagne-microonde {
+	background-color: #eec8a4;
+}
+
+.castagne-bollite {
+	background-color: #ccaf56;
+}
+
+.castagne-forno {
+	background-color: #f9e090;
+}
+
+.castagne-padella {
+	background-color: #daa06a;
+}
+
+.castagne-sale {
+	background-color: #e1ab4c;
+}
