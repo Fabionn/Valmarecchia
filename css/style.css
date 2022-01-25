@@ -648,29 +648,32 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	height: 200vh;
+	height: 150vh;
 	width: 100vw;
+	top: 4rem;
+	background-attachment: scroll;
 }
 
 .castagne-pattern {
 	background-image: url(../img/pattern-castagne.svg);
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
-	height: 250vh;
+	height: 200vh;
 	width: 100vw;
 	top: -50vh;
-	overflow-y: scroll;
+	background-attachment: fixed;
 }
 
 @media only screen and (max-width: 768px) {
 	.container-castagne {
-		height: 150vh;
+		height: 100vh;
 	}
 	.castagne-pattern {
 		background-size: 160%;
-		height: 200vh;
+		height: 150vh;
 	}
 }
+
 
 @media only screen and (min-width: 768px) {
 	.info-castagna {
