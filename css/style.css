@@ -781,9 +781,19 @@ body {
 	background-image: url(../img/castagne-dove1.svg);
 	background-size: cover;
 	background-position: center;
+}
+
+.dove1,
+.dove2 {
+	flex: 1;
+}
+
+.dove1 img {
 	height: 100%;
 }
 
-.castagne-dove-img {
-	height: 50%;
+@media only screen and (max-width: 768px) {
+	.dove-container {
+		flex-direction: column;
+	}
 }
