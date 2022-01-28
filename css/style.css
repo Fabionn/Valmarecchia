@@ -154,6 +154,7 @@ body {
 	background-image: url(../img/talamello.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .talamello-text {
@@ -288,12 +289,12 @@ body {
 	text-decoration: underline;
 }
 .icona-stagione {
+	transform: scale(1);
 	cursor: pointer;
+	transition: all 1s ease-in-out;
 }
-.icona-stagione:hover {
-	border: solid;
-	border-color: #c89c8e;
-	border-radius: 50%;
+.icona-stagione:hover img {
+	transform: scale(1.2);
 }
 
 .footer,
@@ -376,6 +377,26 @@ body {
 .pattern-map .map-wrapper {
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.pattern-map .map-wrapper h1 {
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.pattern-map .map-wrapper h1 {
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.pattern-map .map-wrapper h1 {
+		font-size: 1.2rem;
+	}
 }
 
 .pattern-map .mappa {
@@ -532,7 +553,7 @@ body {
 	cursor: pointer;
 }
 .item:hover > .overflow > .content-art {
-	transform: translateY(0) translateZ(0);
+	opacity: 100%;
 }
 
 .overflow {
@@ -543,6 +564,7 @@ body {
 }
 
 .content-art {
+	opacity: 0;
 	background: rgba(0, 0, 0, 0.6);
 	color: #fff;
 	text-align: center;
@@ -553,8 +575,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	transform: translateY(100%) translateZ(0);
-	transition: transform 500ms ease-out;
+	transition: opacity 800ms ease-out;
 }
 
 .content-art a {
@@ -606,6 +627,29 @@ body {
 
 .container-chisiamo .d-flex {
 	height: 100vh;
+}
+
+.chisiamo-titolo {
+	width: 80%;
+	height: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+	.chisiamo-titolo {
+		height: 60%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.chisiamo-titolo {
+		height: 40%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.chisiamo-titolo {
+		height: 18%;
+	}
 }
 
 .container-chisiamo2 {
