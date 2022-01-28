@@ -58,7 +58,7 @@
 
 #menu .main-nav a {
 	font-family: var(--font-secondary);
-	color: var(--palette-brown);
+	color: #360f0f;
 	display: block;
 	font-size: 2.5rem;
 	padding: 2rem 2rem;
@@ -181,13 +181,13 @@
 
 .toggle-menu.active span:before {
 	top: 0;
-	background-color: var(--palette-brown);
+	background-color: #360f0f;
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 
 .toggle-menu.active span:after {
 	top: 0;
-	background-color: var(--palette-brown);
+	background-color: #360f0f;
 	transform: rotate3d(0, 0, 1, 45deg);
 }
 
